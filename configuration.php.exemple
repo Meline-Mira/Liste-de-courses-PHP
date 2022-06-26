@@ -1,0 +1,9 @@
+<?php
+
+$lien = 'mysql:host=localhost';
+
+$baseDeDonnees = 'CHANGEZ MOI';
+
+$nom = 'CHANGEZ MOI';
+
+$mdp = 'CHANGEZ MOI';
