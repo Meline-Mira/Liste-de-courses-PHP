@@ -29,12 +29,12 @@
 
                 foreach($achats as $achat) {
 
-                    echo '<li><a href="prendre.php?id='.$achat->id.'">&check;</a> ';
+                    echo '<li>';
 
                         if ($achat->pris) {
                             echo '<strike>'.$achat->quantite.' x '.$achat->produit.'</strike>';
                         } else {
-                            echo $achat->quantite.' x '.$achat->produit;
+                            echo '<a href="prendre.php?id='.$achat->id.'">&check;</a>' . $achat->quantite.' x '.$achat->produit;
                         }
                     
                     echo '</li>';
