@@ -8,6 +8,22 @@
     </head>
 
     <body>
+
+        <form method="post" action="ajouter_produit.php">
+            <p>
+
+                <label for="quantite"></label>
+                <input type="number" name="quantite" id="quantite" min="1" />
+
+                x
+
+                <label for="produit"></label>
+                <input type="text" name="produit" id="produit" placeholder="Produit" />
+
+                <input type="submit" value="Ajouter" />
+            
+            </p>
+
         <ul>
             <?php
 
