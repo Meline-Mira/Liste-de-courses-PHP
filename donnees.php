@@ -15,3 +15,10 @@ function creer_achat($pdo, $produit, $quantite) {
 
     $requete->execute(['produit' => $produit, 'quantite' => $quantite]);
 }
+
+function prendre_achat($pdo, $id) {
+
+    $requete = $pdo->prepare('UPDATE achats SET pris = 1 WHERE id = :id');
+
+    $requete->execute(['id' => $id]);
+}
