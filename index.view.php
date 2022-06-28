@@ -23,6 +23,7 @@
                 <input type="submit" value="Ajouter" />
             
             </p>
+        </form>
 
         <ul>
             <?php
@@ -42,6 +43,14 @@
 
             ?>
         </ul>
+
+        <form method="post" action="supprimer_produits.php">
+
+            <input type="submit" name="supprimer_pris" value="Supprimer les produits pris" />
+
+            <input type="submit" name="supprimer_liste" value="Supprimer la liste" />
+
+        </form>
     </body>
 
 </html>

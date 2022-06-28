@@ -22,3 +22,17 @@ function prendre_achat($pdo, $id) {
 
     $requete->execute(['id' => $id]);
 }
+
+function supprimer_pris($pdo) {
+
+    $requete = $pdo->prepare('DELETE FROM achats WHERE pris = 1');
+
+    $requete->execute();
+}
+
+function supprimer_liste($pdo) {
+
+    $requete = $pdo->prepare('DELETE FROM achats');
+
+    $requete->execute();
+}
